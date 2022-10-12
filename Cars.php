@@ -53,57 +53,54 @@ public function forward(): string
 
 // Set and get
 
-    public function setNbwheels($nbwheels)
+    public function setNbwheels(int $nbwheels): void
     {
         $this->nbwheels = $nbwheels;
 
-        return $this;
     }
 
-    public function getNbwheels()
+    public function getNbwheels(): int
     {
         return $this->nbwheels;
     }
 
 
-    public function setCurrentSpeed($currentSpeed)
+    public function setCurrentSpeed(int $currentSpeed): void
     {
         $this->currentSpeed = $currentSpeed;
 
-        return $this;
     }
 
-    public function getCurrentSpeed()
+    public function getCurrentSpeed(): int
     {
         return $this->currentSpeed;
     }
 
-    public function getColor()
+    public function getColor(): string
     {
         return $this->color;
     }
 
-    public function getNbSeats()
+    public function getNbSeats(): int
     {
         return $this->nbSeats;
     }
 
-    public function getEnergy()
+    public function getEnergy(): string
     {
         return $this->energy;
     }
 
-    public function getEnergyLevel()
+    public function getEnergyLevel(): int
     {
         return $this->energyLevel;
     }
 
 
-    public function setEnergyLevel($energyLevel)
+    public function setEnergyLevel(int $energyLevel) : void
     {
         $this->energyLevel = $energyLevel;
 
-        return $this;
     }
 
 
